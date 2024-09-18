@@ -4,7 +4,7 @@ client = RemoteAPIClient()
 sim = client.require('sim')
 
 sim.setStepping(True)
-duration = 1
+duration = 3
 
 sim.startSimulation()
 while (t := sim.getSimulationTime()) < duration:
